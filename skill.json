@@ -1,0 +1,48 @@
+{
+  "name": "purchase-intent-scorer-skill",
+  "version": "1.0.0",
+  "description": "Score visitor purchase intent from behavioral signals (page views, time on site, cart actions, return visits) and trigger personalized interventions.",
+  "author": "alphaparkinc",
+  "category": "analytics",
+  "tags": [
+    "purchase-intent",
+    "behavioral-analytics",
+    "personalization",
+    "conversion",
+    "real-time"
+  ],
+  "inputs": {
+    "session": {
+      "type": "object",
+      "description": "Session data: pages_viewed, time_on_site_sec, product_views, cart_adds, search_queries, is_returning."
+    },
+    "historical": {
+      "type": "object",
+      "description": "Historical data: past_purchases, past_sessions, days_since_last_visit, avg_order_value."
+    },
+    "context": {
+      "type": "object",
+      "description": "Context: device, referral_source, time_of_day, day_of_week."
+    }
+  },
+  "outputs": {
+    "intent_score": {
+      "type": "number",
+      "description": "Purchase intent score 0-100."
+    },
+    "intent_tier": {
+      "type": "string",
+      "description": "Hot / Warm / Cool / Cold."
+    },
+    "top_signals": {
+      "type": "array",
+      "description": "Top behavioral signals driving the score."
+    },
+    "recommended_interventions": {
+      "type": "array",
+      "description": "Personalized actions to convert the visitor."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
