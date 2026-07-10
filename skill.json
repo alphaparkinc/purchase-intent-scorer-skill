@@ -1,8 +1,8 @@
 {
   "name": "purchase-intent-scorer-skill",
   "version": "1.0.0",
-  "description": "Score visitor purchase intent from behavioral signals (page views, time on site, cart actions, return visits) and trigger personalized interventions.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Score visitor purchase intent from behavioral signals (page views, time on site, cart actions, return visits) and trigger personalized interventions.",
+  "author": "genpark",
   "category": "analytics",
   "tags": [
     "purchase-intent",
