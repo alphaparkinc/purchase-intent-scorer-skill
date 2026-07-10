@@ -1,4 +1,4 @@
-# purchase-intent-scorer-skill
+# genpark-purchase-intent-scorer-skill
 
 > **GenPark AI Agent Skill** -- Score visitor purchase intent from behavioral signals and recommend personalized interventions.
 
